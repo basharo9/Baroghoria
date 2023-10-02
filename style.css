@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  transition: all 1s;
+}
+
+body {
+   background-color: #3e9659;
+   background-image: url(./img/BAROGHORIAg.png),url(./img/tree2.png);
+   background-position: left bottom,right bottom;
+   background-repeat: no-repeat;
+    
+}
+
+header {
+    position: sticky;
+    top: 5px;
+    width: 100%;
+    /* padding: 40px 30px; */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.header {
+   background-color: #3e9658a9;
+   border: 1px solid #fff;
+   border-radius: 9px;
+
+}
+
+.logo {
+   font-size: 1.5rem;
+   color: aqua;
+   pointer-events: none;
+   font-weight: 700
+}
+
+.navigation a {
+   text-decoration: none;
+   color: aliceblue;
+   font-size: 20px;
+   font-weight: 600;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+   letter-spacing: 1.5px;
+   /* margin: 0 10px; */
+   padding: 6px 15px;
+   border-radius: 20px;
+   transition: 0.7s all;
+}
+
+.navigation a:hover {
+   background-color: aquamarine;
+   color: #000;
+}
+
+
+
+.parallax {
+   position: relative;
+   height: 55vh;
+   width: 100%; 
+   overflow: hidden;
+   border-radius: 9px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+}
+
+#text {
+   position: absolute;
+   color: #f9f9f9;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+   font-size: 5rem;
+   letter-spacing: 1rem;
+   font-weight: 700;
+   
+}
+
+@media screen and (max-width: 576px) {
+   .parallax {
+      height: 28vh;
+      width: 100%; 
+   }
+   #text {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 600;
+   }
+ }
+
+ @media screen and (min-width: 768px) {
+   .parallax {
+      height: 78vh;
+   }
+   #text {
+      font-size:6rem ;
+      font-weight: 900;
+      letter-spacing: 1.5rem;
+   }
+ }
+ 
+
+.parallax img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   pointer-events: none;
+}
+
+.imag-group {
+   border: 1px solid #ddd;
+   border-radius: 9px;
+   padding: 7px;
+   margin: 10px;
+   max-width: 300px;
+   object-fit: cover;
+   box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+.imag-group div {    
+   overflow: hidden;
+}
+
+
+.fGroup  {
+   display: flex;
+   align-items:center ;
+   justify-content: center;
+   padding: 10px 15px;
+   background-color: #3e96587d;
+   border-radius: 10px;
+   border: 1px solid #fff;
+   transition: all 0.6s;
+}
+
+.fGroup a {
+   text-decoration: none;
+   color: #000;
+   /* margin: 10px 15px; */
+   font-weight: 700;
+}
+
+.fGroup:hover {
+   box-shadow: 7px 7px 10px rgba(0,0,0,0.3);
+   background-color: #32f606;
+}
+
+ 
